@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 30vh;
+    background: gray;
+}
+
+.counter{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.counter--count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    width: 230px;
+    height: 230px;
+    font-size: 2em;
+}
+
+.counter--plus{
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: white;
+    border-radius: 50%;
+    color: white;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    font-size: 2em;
+    cursor: pointer;
+
+}
+.counter--minus{
+    position: absolute;
+    top: 120px;
+    left: -40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border-color: white;
+    color: white;
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.counter--plus:active{
+    background-color: white;
+    color: green;
+    border-color: green;
+}
+.counter--minus:active{
+    background-color: white;
+    color: red;
+    border-color: red;
+}
+.counter--plus:hover{
+    background-color: rgb(1, 77, 1);
+}
+.counter--minus:hover{
+    background-color: rgb(202, 1, 1);
+}
